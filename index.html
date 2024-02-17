@@ -4,13 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bus E Ticketing</title>
+    <!-- tailwindcss instaling -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <section>
+    <header class="py-10 px-4 md:px-32">
 
-    </section>
+        <!-- nav-section -->
+        <section>
+            <nav class="flex justify-between">
+                    <div>
+                        <h2 class="text-4xl font-bold">RH-Ticketing</h2>
+                    </div>
+
+                    <div>
+                        <ul class="flex items-center gap-10 cursor-pointer mt-3">
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Destination</li>
+                            <li>Search</li>
+                        </ul>
+                    </div>
+
+                    <div class=" flex items-center gap-3 bg-green-100 rounded-lg -mt-0.7 btn">                       
+                        <button class="text-xl text-green-600">BUS</button>             
+                        <img src="./images/bus-icon.png" alt="">          
+                    </div>                
+            </nav>
+        </section>
+
+        <!-- banner section -->
+        <section>
+            <div class="hero min-h-screen mt-10 rounded-xl" style="background-image: url(./images/banner.png)">
+                <div class=" text-center text-white max-w-md">
+                    <h1 class="text-4xl mb-24 font-bold">End-to-End Travel with <br> <span class="text-green-500">RH Paribahan</span></h1>
+                    <p class="-mt-20">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined</p>
+                    <button class="bg-green-500 mb-16 mt-8 btn font-bold ">Buy Tickets</button>
+                </div>
+              </div>
+        </section>
+
+        <!-- best offer section -->
+        <section class="">
+            <h2 class="text-4xl font-semibold mt-12 text-center">Best Offer For You</h2>
+
+            <!-- card section -->
+            <div class="flex justify-between">
+           
+            <div class="card w-96 bg-yellow-400 text-neutral-content mt-10">
+                <div class="card-body text-black flex-row justify-between">
+                    <div class="">
+                        <h3 class="font-bold text-3xl">15% OFF</h3>
+                        <p class="font-semibold mt-4 mb-3">on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div class="mt-5">
+                        <h3 class="font-bold text-3xl mb-2">NEW15</h3>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+              </div>
+
+        
+            <div class="card w-96 bg-pink-400 text-neutral-content mt-10">
+                <div class="card-body text-black flex-row justify-between">
+                    <div class="">
+                        <h3 class="font-bold text-3xl">15% OFF</h3>
+                        <p class="font-semibold mt-4 mb-3">on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div class="mt-5">
+                        <h3 class="font-bold text-3xl mb-2">NEW15</h3>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+              
+            <button class="btn text-green-600 btn-outline mt-10">See All offer</button>
+            
+        </section>
+    </header>
 </body>
 <footer>
-    
+
 </footer>
 </html>
