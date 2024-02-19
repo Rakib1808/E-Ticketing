@@ -9,10 +9,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="py-10 px-4 md:px-32">
-
-        <!-- nav-section -->
-        <section>
+    <header>
+        <div class="py-10 px-4 md:px-32">  
+          <!-- nav-section -->
+            <section>
             <nav class="flex justify-between">
                     <div>
                         <h2 class="text-4xl font-bold">RH-Ticketing</h2>
@@ -32,10 +32,10 @@
                         <img src="./images/bus-icon.png" alt="">          
                     </div>                
             </nav>
-        </section>
+            </section>
 
-        <!-- banner section -->
-        <section>
+          <!-- banner section -->
+            <section>
             <div class="hero min-h-screen mt-10 rounded-xl" style="background-image: url(./images/banner.png)">
                 <div class=" text-center text-white max-w-md">
                     <h1 class="text-4xl mb-24 font-bold">End-to-End Travel with <br> <span class="text-green-500">RH Paribahan</span></h1>
@@ -78,16 +78,16 @@
                 </div>
                
             </div>
-        </section>
+            </section>
 
-        <!-- best offer section -->
-        <section>
+          <!-- best offer section -->
+            <section>
             <h2 class="text-4xl font-semibold mt-12 text-center">Best Offer For You</h2>
 
             <!-- card section -->
-            <div class="grid grid-cols-12 gap-10">
+            <div class=" grid grid-cols-12 gap-10">
            
-            <div class=" col-span-6 bg-yellow-400 text-neutral-content mt-10 rounded-2xl">
+                <div class=" stat shadow-xl col-span-6 bg-yellow-400 text-neutral-content mt-10 rounded-2xl">
                 <div class="card-body text-black flex-row justify-between">
                     <div>
                         <h3 class="font-bold text-3xl">15% OFF</h3>
@@ -99,10 +99,10 @@
                         <p>Coupon Code</p>
                     </div>
                 </div>
-              </div>
+                </div>
 
         
-            <div class=" col-span-6 bg-pink-400 text-neutral-content mt-10 rounded-2xl">
+                <div class=" stat shadow-xl col-span-6 bg-pink-400 text-neutral-content mt-10 rounded-2xl">
                 <div class="card-body text-black flex-row justify-between">
                     <div class="">
                         <h3 class="font-bold text-3xl">15% OFF</h3>
@@ -114,16 +114,17 @@
                         <p>Coupon Code</p>
                     </div>
                 </div>
-              </div>
+                </div>
             </div>
 
             <div class=" text-center">
                 <button class="btn text-green-600 btn-outline mt-10">See All offer</button>
             </div>
-        </section>
+            </section>
+        </div>
 
         <!-- ticket box er main section -->
-        <section class="bg-slate-100 mt-24 mb-10">
+        <section class="bg-slate-200 p-16 mt-24 border-t border-solid border-green-400 rounded-3xl">
             <div class="text-center mb-10 p-6">
                 <h3 class="text-4xl font-bold mb-6">RH Paribahan</h3>
                 <p>Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
@@ -131,8 +132,8 @@
 
             <!-- available sit and Coach name section -->
             <div class="px-14">
-            <div class=" bg-white flex justify-between rounded-xl p-10">
-              <div>
+                <div class=" bg-white flex justify-between rounded-xl p-10">
+                <div>
                 <div class="flex justify-between ">
                     <div class="flex items-center gap-3 ">
                         <img src="./images/bus-logo.png" alt="">
@@ -148,7 +149,7 @@
                 </div>
 
                     <!-- route, depature tiem section -->
-                <div class=" bg-gray-100 p-5 mt-5 rounded-lg">
+                <div class=" bg-gray-200 p-5 mt-5 rounded-lg">
                     <div class="flex justify-between border-b-2 border-dashed border-gray-400">
                         <div>
                             <p>Route</p>
@@ -177,45 +178,176 @@
                         </div> 
                     </div>
                 </div>
-              </div>
-                <div class=" border-l-2 border-dashed border-gray-400 px-5 ">
-                    <div class="mt-24">
-                        <img src="./images/fare.png" alt="">
-                        <h3 class="font-bold text-4xl">550tk</h3>
-                        <p>Per Seat</p>
-                    </div>
                 </div>
-            </div>    
-            </div>
+                    <div class="border-l-2 border-dashed border-green-400"></div>
+                    <div class=" mx-16">
+                        <div class="mt-24">
+                            <img src="./images/fare.png" alt="">
+                            <h3 class="font-bold text-4xl">550tk</h3>
+                            <p>Per Seat</p>
+                        </div>
+                    </div>
+                </div>    
+            </div>      
 
             <!-- ticket section -->
-            <div class=" mt-12 p-6 ">
+            <div class="mt-12 px-14">   
+                <div class=" bg-white rounded-2xl grid grid-cols-12 p-6">
+                    <div class="col-span-6">
+                            <div>
+                                <h3 class="font-bold">Select Your Seat</h3>
+                            </div> 
+                            <div class="flex justify-between mt-5">
+                                <div class="flex items-center">
+                                    <img src="./images/seat-gray.png" alt="">
+                                    <p>Available</p>
+                                 </div>
+                            
+                                <div class="flex items-center">
+                                    <img src="./images/seat-green-filled.png" alt="">
+                                    <p>Selected</p>
+                                </div>
+                            </div>
 
-                <!-- select your ticket section-->
-                <div>
-                    <h3 class="font-bold">Select Your Seat</h3>
-                    <div class="flex justify-between mt-5">
-                        <div class="flex items-center">
-                            <img src="./images/seat-gray.png" alt="">
-                            <p>Available</p>
-                        </div>
-                    
-                        <div class="flex items-center">
-                            <img src="./images/seat-green-filled.png" alt="">
-                            <p>Selected</p>
-                        </div>
+                            <!-- seat section -->
+                            <div class="mx-4 mt-14">
+                            <div class="flex justify-between items-center mx-4">
+                            <div class="max-w-16">
+                            <img src="./images/exit.jpg" alt="">
+                            </div>
+                            <div class="max-w-16">
+                            <img src="./images/driving.jpg" alt="">
+                            </div>
+                            </div>
+                            
+                            <div class=" font-semibold text-gray-700 flex justify-between mt-10 mb-6 mx-6">
+                            <p>A</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">A1</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">A2</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">A3</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">A4</p>
+                            </div>
+                            
+                            <div class=" font-semibold text-gray-700 flex justify-between mt-6 mb-6 mx-6">
+                            <p>B</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">B1</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">B2</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">B3</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">B4</p>
+                            </div>
+                            
+                            <div class=" font-semibold text-gray-700 flex justify-between mt-6 mb-6 mx-6">
+                            <p>C</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">C1</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">C2</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">C3</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">C4</p>
+                            </div>
+                            
+                            <div class=" font-semibold text-gray-700 flex justify-between mt-6 mb-6 mx-6">
+                            <p>D</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">D1</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">D2</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">D3</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">D4</p>
+                            </div>
+                            
+                            <div class=" font-semibold text-gray-700 flex justify-between mt-6 mb-6 mx-6">
+                            <p>E</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">E1</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">E2</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">E3</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">E4</p>
+                            </div>
+                            
+                            <div class=" font-semibold text-gray-700 flex justify-between mt-6 mb-6 mx-6">
+                            <p>F</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">F1</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">F2</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">F3</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">F4</p>
+                            </div>
+                            
+                            <div class=" font-semibold text-gray-700 flex justify-between mt-6 mb-6 mx-6">
+                            <p>G</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">G1</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">G2</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">G3</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">G4</p>
+                            </div>
+                            
+                            <div class=" font-semibold text-gray-700 flex justify-between mt-6 mb-6 mx-6">
+                            <p>H</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">H1</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">H2</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">H3</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">H4</p>
+                            </div>
+                            
+                            <div class=" font-semibold text-gray-700 flex justify-between mt-6 mb-6 mx-6">
+                            <p>I</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">I1</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">I2</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">I3</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">I4</p>
+                            </div>
+                            
+                            <div class=" font-semibold text-gray-700 flex justify-between mt-6 mb-6 mx-6">
+                            <p>J</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">J1</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">J2</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">J3</p>
+                            <p class="bg-gray-300 w-10 h-8 text-center rounded-md shadow-xl">J4</p>
+                            </div>
+                            </div>   
                     </div>
-                </div>
+                       <!-- confrim section -->
 
-                <!-- confrim your ticket section -->
-                <!-- <div>
-                    <h3 class="font-bold">Confrim Your Ticket</h3>
-                </div> -->
+                       <div class="border-l-2 border-dashed border-gray-400 mx-10"></div>
+
+                    <div class=" col-span-5 ">
+                        <div>
+                            <h3 class="font-bold">Confrim Your Ticket</h3>
+                         </div>
+                    </div>    
+                </div>
             </div>
         </section>
     </header>
 </body>
-<footer>
 
+<!-- fotter section -->
+<footer class="bg-gray-950 text-white">
+    <div class="p-36">
+        <div class="flex justify-between mb-10">
+            <div>
+                <h3 class="font-semibold text-4xl mb-6">RH-Ticket</h3>
+                <p class="text-gray-400">P-Ticket is a digital palatfrom to make your <br> daily commuting better.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-2xl mb-4">Download our app</h3>
+                <div class="flex items-center px-4 py-1 gap-2 bg-black border-solid border-2 rounded-lg">
+                    <div>
+                        <img src="./images/playstore.png" alt="">
+                    </div>
+                    <div>
+                        <p>GET IT ON</p>
+                        <h3 class=" font-semibold text-xl">Google Play</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" border-t-2 border-dashed border-gray-600 mb-6"></div>
+        <div class="flex justify-between text-gray-300">
+            <div>
+               <p class="text-gray-500">@all rights reserved, RH-Ticket services limited.2024</p>
+            </div>
+            <div class="flex justify-between gap-6">
+                <p>Terms & condition</p>
+                <p>Return & refund policy</p>
+                <p>Privacy policy</p>
+            </div>
+        </div>
+    </div>
 </footer>
 </html>
