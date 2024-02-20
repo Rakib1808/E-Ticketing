@@ -24,7 +24,7 @@
 <body>
     <header>
         <!-- 1st page section start -->
-        <section class="hidden">
+        <section id="1st-part" class="">
             <div class="py-10 px-4 md:px-32">  
                 <!-- nav-section -->
                   <section>
@@ -370,7 +370,7 @@
                               </div>
       
                               <div>
-                                  <button class="bg-[#1DD100] text-white font-bold text-xl cursor-pointer rounded-xl w-96 h-16">Next</button>
+                                  <button onclick="play()" class="bg-[#1DD100] text-white font-bold text-xl cursor-pointer rounded-xl w-96 h-16">Next</button>
                               </div>
       
                               <div class="flex justify-between px-6 mr-12 mt-6 text-slate-600 underline cursor-pointer">
@@ -387,7 +387,7 @@
        <!-- 1st page end -->
 
        <!-- 2nd page start -->
-        <section class="  bg-slate-200 flex flex-col items-center p-10">
+        <section id="2nd-part" class=" hidden bg-slate-200 flex flex-col items-center p-10">
             <div class="bg-white p-10 rounded-2xl shadow-2xl">
                 <div class="flex flex-col items-center gap-8">
                     <img src="./images/success.png" alt="">
@@ -401,11 +401,13 @@
         </section>
        <!-- 2nd page end -->
     </header>
+    <script src="index.js"></script>
 </body>
 
 <!-- fotter section -->
-<footer class="bg-gray-950 text-white">
-    <div class="p-36">
+<footer id="footer" >
+    <div class="bg-gray-950 text-white">
+        <div class="p-36">
         <div class="flex justify-between mb-10">
             <div>
                 <h3 class="font-semibold text-4xl mb-6">RH-Ticket</h3>
@@ -434,6 +436,7 @@
                 <p>Return & refund policy</p>
                 <p>Privacy policy</p>
             </div>
+        </div>
         </div>
     </div>
 </footer>
